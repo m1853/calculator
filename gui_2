@@ -1,0 +1,88 @@
+
+from tkinter import *
+w= Tk()
+w.title('calculator')
+w.geometry('300x400')
+w.tk.call('tk','scaling',3.0)
+
+# Entry
+# buttton click
+# buttton layout
+# operation
+# calculator
+
+
+entry = Entry(w,font=('Arial',20),justify='right')
+entry.grid(row=0 , column= 0 ,sticky='ew',padx=5,pady=5,columnspan=4)
+
+
+def button_click(num):
+    current_button = entry.get()
+    entry.delete(0,END)
+    entry.insert(0,current_button+str(num))
+
+
+first_num = None
+operation = None
+
+def fun_operation(op):
+    global first_num,operation
+    first_num = float(entry.get())
+    operation = op
+    entry.delete(0,END)
+
+
+def clear():
+    entry.delete(0,END)
+
+
+def calculator():
+    second_num = float(entry.get())
+    if operation == '*':
+        result = first_num * second_num
+    if operation == '+':
+        result = first_num + second_num
+    if operation == '-':
+        result = first_num - second_num
+    if operation == '/':
+        result = first_num/second_num if second_num!=0 else "Error"
+    entry.delete(0,END)
+    entry.insert(0,str(result))
+
+
+row =  1
+column = 0
+
+buttons = [
+    '7','8','9','/',
+    '4','5','6','*',
+    '1','2','3','+',
+    'c','=','-'
+]
+
+for i in range(4):
+    w.grid_columnconfigure(i, weight=1, uniform="cols")
+for button in buttons:
+
+    if button in '+*/-':
+        cmd = lambda op=button:fun_operation(op)
+    elif button =='=':
+        cmd = calculator
+    elif button=='c':
+        cmd = clear
+    else:
+        cmd = lambda num=button:button_click(num)
+
+    print(button)
+    btn = Button(w, text=button, font=('Arial', 12),command= cmd)
+    btn.grid(row=row, column=column, padx=2, pady=2,sticky="nsew")
+    column += 1
+    if column > 3:  
+        column = 0
+        row += 1
+
+
+
+
+
+w.mainloop()
