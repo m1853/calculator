@@ -6,7 +6,7 @@ A modern, responsive calculator web application converted from Python Tkinter to
 
 ## 🚀 Live Demo
 
-[View Live Calculator](https://your-calculator-url.netlify.app) *(Replace with your actual deployment URL)*
+[View Live Calculator]([https://your-calculator-url.netlify.app](https://profound-axolotl-423a52.netlify.app/)) *(Replace with your actual deployment URL)*
 
 ## ✨ Features
 
