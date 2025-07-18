@@ -43,7 +43,7 @@ Fully responsive design that adapts perfectly to mobile screens while maintainin
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/web-calculator.git
+   git clone https://github.com/m1853/web-calculator.git
    cd web-calculator
    ```
 
@@ -159,10 +159,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Developer**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- **Developer**: Mariam Ahmed Mostafa
+- **Email**: mariamahmed4808@gmail.com
+- **GitHub**: (https://github.com/m1853)
+
 
 ---
 
