@@ -6,7 +6,7 @@ A modern, responsive calculator web application converted from Python Tkinter to
 
 ## 🚀 Live Demo
 
-[View Live Calculator]([https://your-calculator-url.netlify.app](https://profound-axolotl-423a52.netlify.app/)) *(Replace with your actual deployment URL)*
+[View Live Calculator](https://profound-axolotl-423a52.netlify.app/) *(Replace with your actual deployment URL)*
 
 ## ✨ Features
 
@@ -161,7 +161,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Developer**: Mariam Ahmed Mostafa
 - **Email**: mariamahmed4808@gmail.com
-- **GitHub**: (https://github.com/m1853)
+- **GitHub**:[@m1853] (https://github.com/m1853)
 
 
 ---
